@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+    <title>Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Conversion Calculator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion Processes</a></li>
+            <li><a href="calculator.html">Conversion Calculator</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="calculator">
+            <label for="inputValue">Enter Value:</label>
+            <input type="text" id="inputValue" readonly>
+            <div class="buttons">
+                <div class="row">
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button class="operator" onclick="calculateConversion('divide')">÷</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button class="operator" onclick="calculateConversion('multiply')">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button class="operator" onclick="calculateConversion('subtract')">-</button>
+                </div>
+                <div class="row">
+                    <button class="zero" onclick="appendValue('0')">0</button>
+                    <button onclick="clearInput()">C</button>
+                    <button class="operator" onclick="calculateConversion('add')">+</button>
+                    <button class="equals" onclick="calculateConversion('equals')">=</button>
+                </div>
+            </div>
+            <p id="result"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 [adib farhan<3]</p>
+    </footer>
+</body>
+</html>
+
+

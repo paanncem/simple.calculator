@@ -1,0 +1,38 @@
+<title>styles.css</title>/* Add this to your existing styles.css file or create a new one */
+
+#calculator {
+    max-width: 300px;
+    margin: auto;
+    background-color: #55555;
+    border: 1px solid #3676;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#inputValue {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #7777;
+}
+
+button:hover {
+    background-color: #333;
+}
